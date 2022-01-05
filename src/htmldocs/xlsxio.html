@@ -161,8 +161,8 @@ window.addEventListener('DOMContentLoaded', main);
 
   </ul>
   <ul class="simple nested-toc-section">readOpenMemory
-      <li><a class="reference" href="#readOpenMemory%2Cstring%2Cint%2Cbool"
-    title="readOpenMemory(data: var string; datalen: int; freedata: bool = true): XlsxioReader">readOpenMemory(data: var string; datalen: int; freedata: bool = true): XlsxioReader</a></li>
+      <li><a class="reference" href="#readOpenMemory%2Cptr%2Cint%2Cbool"
+    title="readOpenMemory(data: ptr; datalen: int; freedata: bool = true): XlsxioReader">readOpenMemory(data: ptr; datalen: int; freedata: bool = true): XlsxioReader</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">readSheetFlags
@@ -466,9 +466,8 @@ Opens a spreadsheet file handle for reading. Returns a handle.
 
 </dd>
 </div>
-<div id="readOpenMemory,string,int,bool">
-<dt><pre><span class="Keyword">proc</span> <a href="#readOpenMemory%2Cstring%2Cint%2Cbool"><span class="Identifier">readOpenMemory</span></a><span class="Other">(</span><span class="Identifier">data</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">datalen</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">freedata</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">true</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a> {.
-    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<div id="readOpenMemory,ptr,int,bool">
+<dt><pre><span class="Keyword">proc</span> <a href="#readOpenMemory%2Cptr%2Cint%2Cbool"><span class="Identifier">readOpenMemory</span></a><span class="Other">(</span><span class="Identifier">data</span><span class="Other">:</span> <span class="Keyword">ptr</span><span class="Other">;</span> <span class="Identifier">datalen</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">freedata</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">true</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a></pre></dt>
 <dd>
 
 
@@ -822,7 +821,7 @@ Lists read handle's sheets.
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-05 17:11:42 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-05 20:13:57 UTC</small>
       </div>
     </div>
   </div>

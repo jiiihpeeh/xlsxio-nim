@@ -5,6 +5,7 @@ import
     std/enumutils,
     std/strutils,
     std/times
+    #std/streams
 
 {.passL: "-lxlsxio_read".}
 {.passL: "-lxlsxio_write".}
@@ -70,9 +71,9 @@ template boolToCint(flag: bool): cint =
         intflag = 1
     intflag
 
-proc readOpenMemory*(data: var string; datalen: int;
+proc readOpenMemory*(data: ptr; datalen: int;
         freedata: bool = true): XlsxioReader =
-    var reader = xlsxio_read_core.xlsxioread_open_memory(data.addr,
+    var reader = xlsxio_read_core.xlsxioread_open_memory(data,
             datalen.uint64, boolToCint(freedata))
     if not reader.isNil:
         return reader
