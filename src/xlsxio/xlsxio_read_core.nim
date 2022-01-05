@@ -12,21 +12,21 @@ proc xlsxioread_get_version_string*(): cstring {.cdecl,
 
 type
   xlsxio_read_struct* = object
-  Xlsxioreader* = ptr xlsxio_read_struct
+  XlsxioReader* = ptr xlsxio_read_struct
 
 
-proc xlsxioread_open*(filename: cstring): Xlsxioreader {.cdecl,
+proc xlsxioread_open*(filename: cstring): XlsxioReader {.cdecl,
     importc: "xlsxioread_open".}
 
-proc xlsxioread_open_filehandle*(filehandle: cint): Xlsxioreader {.cdecl,
+proc xlsxioread_open_filehandle*(filehandle: cint): XlsxioReader {.cdecl,
     importc: "xlsxioread_open_filehandle".}
 
 
 proc xlsxioread_open_memory*(data: pointer; datalen: uint64;
-    freedata: cint): Xlsxioreader {.
+    freedata: cint): XlsxioReader {.
     cdecl, importc: "xlsxioread_open_memory".}
 
-proc xlsxioread_close*(handle: Xlsxioreader) {.cdecl,
+proc xlsxioread_close*(handle: XlsxioReader) {.cdecl,
     importc: "xlsxioread_close".}
 
 type
@@ -34,7 +34,7 @@ type
       callbackdata: pointer): cint {.cdecl.}
 
 
-proc xlsxioread_list_sheets*(handle: Xlsxioreader;
+proc xlsxioread_list_sheets*(handle: XlsxioReader;
                             callback: xlsxioread_list_sheets_callback_fn;
                             callbackdata: pointer) {.cdecl,
     importc: "xlsxioread_list_sheets".}
@@ -60,7 +60,7 @@ type
 
 
 
-proc xlsxioread_process*(handle: Xlsxioreader; sheetname: cstring;
+proc xlsxioread_process*(handle: XlsxioReader; sheetname: cstring;
                         flags: cuint;
                         cell_callback: xlsxioread_process_cell_callback_fn;
                         row_callback: xlsxioread_process_row_callback_fn;
@@ -70,65 +70,65 @@ proc xlsxioread_process*(handle: Xlsxioreader; sheetname: cstring;
 
 type
   xlsxio_read_sheetlist_struct* = object
-  Xlsxioreadersheetlist* = ptr xlsxio_read_sheetlist_struct
+  XlsxioReaderSheetList* = ptr xlsxio_read_sheetlist_struct
 
-proc xlsxioread_sheetlist_open*(handle: Xlsxioreader): Xlsxioreadersheetlist {.
+proc xlsxioread_sheetlist_open*(handle: XlsxioReader): XlsxioReaderSheetList {.
     cdecl, importc: "xlsxioread_sheetlist_open".}
 
-proc xlsxioread_sheetlist_close*(sheetlisthandle: Xlsxioreadersheetlist) {.cdecl,
+proc xlsxioread_sheetlist_close*(sheetlisthandle: XlsxioReaderSheetList) {.cdecl,
     importc: "xlsxioread_sheetlist_close".}
 
 
-proc xlsxioread_sheetlist_next*(sheetlisthandle: Xlsxioreadersheetlist): cstring {.
+proc xlsxioread_sheetlist_next*(sheetlisthandle: XlsxioReaderSheetList): cstring {.
     cdecl, importc: "xlsxioread_sheetlist_next".}
 
 type
   xlsxio_read_sheet_struct* = object
-  Xlsxioreadersheet* = ptr xlsxio_read_sheet_struct
+  XlsxioReaderSheet* = ptr xlsxio_read_sheet_struct
 
 
-proc xlsxioread_sheet_last_row_index*(sheethandle: Xlsxioreadersheet): csize_t {.
+proc xlsxioread_sheet_last_row_index*(sheethandle: XlsxioReaderSheet): csize_t {.
     cdecl, importc: "xlsxioread_sheet_last_row_index".}
 
 proc xlsxioread_sheet_last_column_index*(
-  sheethandle: Xlsxioreadersheet): csize_t {.
+  sheethandle: XlsxioReaderSheet): csize_t {.
     cdecl, importc: "xlsxioread_sheet_last_column_index".}
 
-proc xlsxioread_sheet_flags*(sheethandle: Xlsxioreadersheet): cuint {.cdecl,
+proc xlsxioread_sheet_flags*(sheethandle: XlsxioReaderSheet): cuint {.cdecl,
     importc: "xlsxioread_sheet_flags".}
 
 
-proc xlsxioread_sheet_open*(handle: Xlsxioreader; sheetname: cstring;
-                           flags: cuint): Xlsxioreadersheet {.cdecl,
+proc xlsxioread_sheet_open*(handle: XlsxioReader; sheetname: cstring;
+                           flags: cuint): XlsxioReaderSheet {.cdecl,
     importc: "xlsxioread_sheet_open".}
 
 
-proc xlsxioread_sheet_close*(sheethandle: Xlsxioreadersheet) {.cdecl,
+proc xlsxioread_sheet_close*(sheethandle: XlsxioReaderSheet) {.cdecl,
     importc: "xlsxioread_sheet_close".}
 
 
-proc xlsxioread_sheet_next_row*(sheethandle: Xlsxioreadersheet): cint {.cdecl,
+proc xlsxioread_sheet_next_row*(sheethandle: XlsxioReaderSheet): cint {.cdecl,
     importc: "xlsxioread_sheet_next_row".}
 
 
-proc xlsxioread_sheet_next_cell*(sheethandle: Xlsxioreadersheet): cstring {.
+proc xlsxioread_sheet_next_cell*(sheethandle: XlsxioReaderSheet): cstring {.
     cdecl, importc: "xlsxioread_sheet_next_cell".}
 
-proc xlsxioread_sheet_next_cell_string*(sheethandle: Xlsxioreadersheet;
+proc xlsxioread_sheet_next_cell_string*(sheethandle: XlsxioReaderSheet;
                                        pvalue: ptr cstring): cint {.cdecl,
     importc: "xlsxioread_sheet_next_cell_string".}
 
 
-proc xlsxioread_sheet_next_cell_int*(sheethandle: Xlsxioreadersheet;
+proc xlsxioread_sheet_next_cell_int*(sheethandle: XlsxioReaderSheet;
                                     pvalue: ptr int64): cint {.cdecl,
     importc: "xlsxioread_sheet_next_cell_int".}
 
-proc xlsxioread_sheet_next_cell_float*(sheethandle: Xlsxioreadersheet;
+proc xlsxioread_sheet_next_cell_float*(sheethandle: XlsxioReaderSheet;
                                       pvalue: ptr cdouble): cint {.cdecl,
     importc: "xlsxioread_sheet_next_cell_float".}
 
 
-proc xlsxioread_sheet_next_cell_datetime*(sheethandle: Xlsxioreadersheet;
+proc xlsxioread_sheet_next_cell_datetime*(sheethandle: XlsxioReaderSheet;
     pvalue: ptr int64): cint {.cdecl,
                             importc: "xlsxioread_sheet_next_cell_datetime".}
 

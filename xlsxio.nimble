@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "juujaa"
 description   = "This is a xlsio wrapper done Nim in mind."
 license       = "MIT"
