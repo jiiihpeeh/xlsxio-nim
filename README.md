@@ -1,4 +1,4 @@
-This is a xlsxio wrapper  for Nim. It is meant for lighweight/speedy xlsx reading. Not everything is tested (in memory reading for instance). Basic reading should work.
+This is a xlsxio wrapper  for Nim. It is meant for lighweight/speedy xlsx reading and writing. Not everything is tested (in memory reading for instance). Basic reading should work.
 
 TODO: Documentation and testing.
 ```
