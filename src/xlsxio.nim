@@ -97,7 +97,7 @@ proc readSheetlistOpen*(handle: XlsxioReader): XlsxioReaderSheetList =
         return handle
 
 iterator readSheets*(handle: XlsxioReader): string =
-    ## Iterates oviable aviable sheets
+    ## Iterates over aviable sheets
     if handle.isNil:
         raise newException(IOError, "Can not read a file (handle: nil)")
     var listHandle = readSheetlistOpen(handle)
