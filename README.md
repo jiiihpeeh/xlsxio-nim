@@ -5,4 +5,4 @@ TODO: Documentation and testing.
 nimble install https://gitlab.com/jiiihpeeh/xlsxio-nim/
 ```
 Documentation
-https://gl.githack.com/jiiihpeeh/xlsxio/src/htmldocs/xlsxio.html
+https://glcdn.githack.com/jiiihpeeh/xlsxio-nim/-/raw/main/src/htmldocs/xlsxio.html
