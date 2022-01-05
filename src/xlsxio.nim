@@ -5,8 +5,6 @@ import
     std/enumutils,
     std/strutils,
     std/times
-    #std/streams
-
 {.passL: "-lxlsxio_read".}
 {.passL: "-lxlsxio_write".}
 type
@@ -37,6 +35,7 @@ const
     #epochOffseti = -2209075200'i64
 
 proc readGetVersion*(): XlsxioVersion =
+    ## Returns version info in object format
     var pmajor, pminor, pmicro: cint
     xlsxio_read_core.xlsxioread_get_version(pmajor.addr, pminor.addr, pmicro.addr)
     return XlsxioVersion(major: pmajor.int, minor: pminor.int,
@@ -44,13 +43,16 @@ proc readGetVersion*(): XlsxioVersion =
 
 proc `$`*(version: XlsxioVersion): string =
     ##Formats version info into a string
+    runnableExamples:
+        import xlsxio
+        let version = $ readGetVersion
+        # Gives something like "0.20.2"
     return $ version.major & "." & $ version.minor & "." & $ version.micro
 
 
 proc readOpen*(filename: string): XlsxioReader =
     ##Opens a spreadsheet for reading. Returns a handle.
     var reader = xlsxio_read_core.xlsxioread_open(filename.cstring)
-    #defer xlsxio_read_core.xlsxioread_close(handle)
     if not reader.isNil:
         return reader
     else:
@@ -73,6 +75,7 @@ template boolToCint(flag: bool): cint =
 
 proc readOpenMemory*(data: ptr; datalen: int;
         freedata: bool = true): XlsxioReader =
+    ##Not tested
     var reader = xlsxio_read_core.xlsxioread_open_memory(data,
             datalen.uint64, boolToCint(freedata))
     if not reader.isNil:
@@ -94,9 +97,10 @@ proc readSheetlistOpen*(handle: XlsxioReader): XlsxioReaderSheetList =
         return handle
 
 iterator readSheets*(handle: XlsxioReader): string =
+    ## Iterates oviable aviable sheets
     if handle.isNil:
         raise newException(IOError, "Can not read a file (handle: nil)")
-    var listHandle = xlsxioreadSheetlistOpen(handle)
+    var listHandle = readSheetlistOpen(handle)
     while true:
         let sheetname = xlsxio_read_core.xlsxioread_sheetlist_next(listHandle)
         if sheetname.isNil:
@@ -106,6 +110,7 @@ iterator readSheets*(handle: XlsxioReader): string =
             yield $ sheetname
 
 iterator readSheets*(handle: XlsxioReaderSheetList): string =
+    ## Iterates over aviable sheets
     if handle.isNil:
         raise newException(IOError, "Can not read sheets (handle: nil)")
     while true:
@@ -123,7 +128,7 @@ proc sheets*(handle: XlsxioReader): seq[string] =
 
 proc hasSheet*(handle: XlsxioReader; name: string): bool =
     # Checks if a read handle has a sheet
-    var listhandle = xlsxioreadSheetlistOpen(handle)
+    var listhandle = readSheetlistOpen(handle)
     #defer: xlsxio_read_core.xlsxioread_sheetlist_close(listhandle)
     for s in readSheets(listhandle):
         if name == s:
@@ -133,7 +138,8 @@ proc hasSheet*(handle: XlsxioReader; name: string): bool =
     return false
 
 proc len*(handle: XlsxioReader): int =
-    var listhandle = xlsxioreadSheetlistOpen(handle)
+    ##Retuen sheet count
+    var listhandle = readSheetlistOpen(handle)
     var count = 0
     #defer: xlsxio_read_core.xlsxioread_sheetlist_close(listhandle)
     for s in readSheets(listhandle):
@@ -142,6 +148,7 @@ proc len*(handle: XlsxioReader): int =
 
 proc readSheetOpen*(handle: XlsxioReader; sheetname: string;
         skip: XlsxIOSkip = None): XlsxioReaderSheet =
+    ##Opens a sheet. Takes ignore options.
     var reader = xlsxio_read_core.xlsxioread_sheet_open(handle,
             sheetname.cstring, skip.cuint)
     if not reader.isNil:
@@ -151,6 +158,7 @@ proc readSheetOpen*(handle: XlsxioReader; sheetname: string;
 
 proc readSheetOpen*(handle: XlsxioReader; sheetindex: int;
         skip: XlsxIOSkip = None): XlsxioReaderSheet =
+    ##Opens a sheet for a given index. Takes ignore options.
     var index = 1
     var sheetname: string
     var found = false

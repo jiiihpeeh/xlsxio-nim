@@ -413,6 +413,10 @@ window.addEventListener('DOMContentLoaded', main);
 <dd>
 
 Formats version info into a string
+<p><strong class="examples_text">Example:</strong></p>
+<pre class="listing"><span class="Keyword">import</span> <span class="Identifier">xlsxio</span>
+<span class="Keyword">let</span> <span class="Identifier">version</span> <span class="Operator">=</span> <span class="Operator">$</span> <span class="Identifier">readGetVersion</span>
+<span class="Comment"># Gives something like &quot;0.20.2&quot;</span></pre>
 
 </dd>
 </div>
@@ -429,7 +433,7 @@ Formats version info into a string
 <dt><pre><span class="Keyword">proc</span> <a href="#len%2CXlsxioReader"><span class="Identifier">len</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Retuen sheet count
 
 </dd>
 </div>
@@ -445,7 +449,7 @@ Closes a handle.
 <dt><pre><span class="Keyword">proc</span> <a href="#readGetVersion"><span class="Identifier">readGetVersion</span></a><span class="Other">(</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio.html#XlsxIOVersion"><span class="Identifier">XlsxIOVersion</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Returns version info in object format
 
 </dd>
 </div>
@@ -470,7 +474,7 @@ Opens a spreadsheet file handle for reading. Returns a handle.
 <dt><pre><span class="Keyword">proc</span> <a href="#readOpenMemory%2Cptr%2Cint%2Cbool"><span class="Identifier">readOpenMemory</span></a><span class="Other">(</span><span class="Identifier">data</span><span class="Other">:</span> <span class="Keyword">ptr</span><span class="Other">;</span> <span class="Identifier">datalen</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">freedata</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">true</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a></pre></dt>
 <dd>
 
-
+Not tested
 
 </dd>
 </div>
@@ -587,7 +591,7 @@ Opens a spreadsheet file handle for reading. Returns a handle.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Opens a sheet for a given index. Takes ignore options.
 
 </dd>
 </div>
@@ -597,7 +601,7 @@ Opens a spreadsheet file handle for reading. Returns a handle.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Opens a sheet. Takes ignore options.
 
 </dd>
 </div>
@@ -798,7 +802,7 @@ Lists read handle's sheets.
 <dt><pre><span class="Keyword">iterator</span> <a href="#readSheets.i%2CXlsxioReader"><span class="Identifier">readSheets</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Iterates oviable aviable sheets
 
 </dd>
 </div>
@@ -807,7 +811,7 @@ Lists read handle's sheets.
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Iterates over aviable sheets
 
 </dd>
 </div>
@@ -821,7 +825,7 @@ Lists read handle's sheets.
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-05 20:13:57 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-05 23:19:34 UTC</small>
       </div>
     </div>
   </div>
