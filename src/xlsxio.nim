@@ -1,3 +1,14 @@
+##  This is a bit higher level wrapper for xlsxio. It automates memory freeing,
+##  converts Nil errors into exceptions, provides few iterators/ procedures
+## and turns some constants into enums. Lower level access is available in src/xlsxio/ directory.
+## 
+## 
+##  In order to keep it more readable this higher level wrapper omits xlsxio prefix in procedure names. Due to
+##  quite distinctively named types namespace collisions/confusion should hopefully not happen. 
+##  Prefix read/write correspond to their respective xlsxio counterparts. Time conversion omits
+##  dateTime naming convention and uses epoch (unix) and Time from the standard library.
+## 
+
 import
     xlsxio/xlsxio_read_core,
     xlsxio/xlsxio_write_core,
@@ -31,7 +42,7 @@ proc skippables(): seq[int]{.compiletime.} =
 
 const
     skipNums = skippables()
-    epochOffsetf = -2209075200'f64
+    epochOffsetF = -2209075200'f64
     #epochOffseti = -2209075200'i64
 
 proc readGetVersion*(): XlsxioVersion =
@@ -42,7 +53,7 @@ proc readGetVersion*(): XlsxioVersion =
             micro: pmicro.int)
 
 proc `$`*(version: XlsxioVersion): string =
-    ##Formats version info into a string
+    ## Formats version info into a string
     runnableExamples:
         import xlsxio
         let version = $ readGetVersion
@@ -51,7 +62,7 @@ proc `$`*(version: XlsxioVersion): string =
 
 
 proc readOpen*(filename: string): XlsxioReader =
-    ##Opens a spreadsheet for reading. Returns a handle.
+    ## Opens a spreadsheet for reading. Returns a handle.
     var reader = xlsxio_read_core.xlsxioread_open(filename.cstring)
     if not reader.isNil:
         return reader
@@ -59,7 +70,10 @@ proc readOpen*(filename: string): XlsxioReader =
         raise newException(IOError, "Can not open a file")
 
 proc readOpenFilehandle*(filehandle: File): XlsxioReader =
-    ##Opens a spreadsheet file handle for reading. Returns a handle.
+    ## Opens a spreadsheet file handle for reading. Returns a handle.
+    runnableExamples:
+        let handle = open("calc.xlsx")
+        let xlsx = readOpenFilehandle(handle)
     var osHandle = getOsFileHandle(filehandle)
     var reader = xlsxio_read_core.xlsxioread_open_filehandle(osHandle)
     if not reader.isNil:
@@ -75,7 +89,7 @@ template boolToCint(flag: bool): cint =
 
 proc readOpenMemory*(data: ptr; datalen: int;
         freedata: bool = true): XlsxioReader =
-    ##Not tested
+    ## Not tested
     var reader = xlsxio_read_core.xlsxioread_open_memory(data,
             datalen.uint64, boolToCint(freedata))
     if not reader.isNil:
@@ -84,7 +98,7 @@ proc readOpenMemory*(data: ptr; datalen: int;
         raise newException(IOError, "Can not handle data")
 
 proc readClose*(handle: XlsxioReader) =
-    ##Closes a handle.
+    ## Closes a handle.
     xlsxio_read_core.xlsxioread_close(handle)
 
 
@@ -127,7 +141,7 @@ proc sheets*(handle: XlsxioReader): seq[string] =
 
 
 proc hasSheet*(handle: XlsxioReader; name: string): bool =
-    # Checks if a read handle has a sheet
+    ## Checks if a read handle has a sheet
     var listhandle = readSheetlistOpen(handle)
     for s in readSheets(listhandle):
         if name == s:
@@ -137,7 +151,7 @@ proc hasSheet*(handle: XlsxioReader; name: string): bool =
     return false
 
 proc len*(handle: XlsxioReader): int =
-    ##Retuen sheet count
+    ##Returns sheet count
     var listhandle = readSheetlistOpen(handle)
     var count = 0
     for s in readSheets(listhandle):
@@ -308,7 +322,7 @@ iterator readSheetRowsEpoch*(handle: XlsxioReaderSheet): seq[float] =
             let s = readSheetNextCell(handle)
             if s.state:
                 try:
-                    row.add s.value.parseFloat + epochOffsetf
+                    row.add s.value.parseFloat + epochOffsetF
                 except:
                     discard
             else:
@@ -326,7 +340,7 @@ iterator readSheetRowsTime*(handle: XlsxioReaderSheet): seq[Time] =
             let s = readSheetNextCell(handle)
             if s.state:
                 try:
-                    row.add fromUnixFloat(s.value.parseFloat + epochOffsetf)
+                    row.add fromUnixFloat(s.value.parseFloat + epochOffsetF)
                 except:
                     discard
             else:
