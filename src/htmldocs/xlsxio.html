@@ -359,7 +359,18 @@ window.addEventListener('DOMContentLoaded', main);
   
   <p class="module-desc"><p>This is a bit higher level wrapper for xlsxio. It automates memory freeing, converts Nil errors into exceptions, provides few iterators/ procedures and turns some constants into enums. Lower level access is available in src/xlsxio/ directory.</p>
 <p>In order to keep it more readable this higher level wrapper omits xlsxio prefix in procedure names. Due to quite distinctively named types namespace collisions/confusion should hopefully not happen. Prefix read/write correspond to their respective xlsxio counterparts. Time conversion omits dateTime naming convention and uses epoch (unix) and Time from the standard library. </p>
-</p>
+
+<p><strong class="examples_text">Example:</strong></p>
+<pre class="listing"><span class="Keyword">import</span> <span class="Identifier">src</span><span class="Operator">/</span><span class="Identifier">xlsxio</span>
+<span class="Keyword">import</span> <span class="Identifier">xlsxio</span>
+<span class="Keyword">let</span> <span class="Identifier">handle</span> <span class="Operator">=</span> <span class="Identifier">open</span><span class="Punctuation">(</span><span class="StringLit">&quot;calc.xlsx&quot;</span><span class="Punctuation">)</span> 
+<span class="Keyword">let</span> <span class="Identifier">xlsx</span> <span class="Operator">=</span> <span class="Identifier">readOpenFilehandle</span><span class="Punctuation">(</span><span class="Identifier">handle</span><span class="Punctuation">)</span> <span class="Comment">#alternatively let xlsx = readOpen(handle)</span>
+<span class="Keyword">let</span> <span class="Identifier">sheet</span> <span class="Operator">=</span> <span class="Identifier">xlsx</span><span class="Operator">.</span><span class="Identifier">readSheetOpen</span><span class="Punctuation">(</span><span class="StringLit">&quot;Sheet 1&quot;</span><span class="Punctuation">)</span> <span class="Comment"># or by index xlsx.readSheetOpen(1)</span>
+<span class="Comment">#echoes sheet content row by row in seq[string]</span>
+<span class="Keyword">for</span> <span class="Identifier">i</span> <span class="Keyword">in</span> <span class="Identifier">readSheetRows</span><span class="Punctuation">(</span><span class="Identifier">sheet</span><span class="Punctuation">)</span><span class="Punctuation">:</span>
+    <span class="Identifier">echo</span> <span class="Identifier">i</span>
+<span class="Identifier">xlsx</span><span class="Operator">.</span><span class="Identifier">readClose</span><span class="Punctuation">(</span><span class="Punctuation">)</span>
+<span class="Identifier">handle</span><span class="Operator">.</span><span class="Identifier">close</span><span class="Punctuation">(</span><span class="Punctuation">)</span></pre></p>
   <div class="section" id="6">
 <h1><a class="toc-backref" href="#6">Imports</a></h1>
 <dl class="item">
@@ -596,7 +607,7 @@ Not tested
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-Opens a sheet for a given index. Takes ignore options.
+Opens a sheet for a given index. Takes ignore options. Indexing is 1 based.
 
 </dd>
 </div>
@@ -830,7 +841,7 @@ Iterates over aviable sheets
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-06 06:43:13 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-06 07:22:49 UTC</small>
       </div>
     </div>
   </div>

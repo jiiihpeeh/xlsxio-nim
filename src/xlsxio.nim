@@ -8,7 +8,17 @@
 ##  Prefix read/write correspond to their respective xlsxio counterparts. Time conversion omits
 ##  dateTime naming convention and uses epoch (unix) and Time from the standard library.
 ## 
-
+runnableExamples:
+    import xlsxio
+    let handle = open("calc.xlsx") 
+    let xlsx = readOpenFilehandle(handle) #alternatively let xlsx = readOpen(handle)
+    let sheet = xlsx.readSheetOpen("Sheet 1") # or by index xlsx.readSheetOpen(1)
+    #echoes sheet content row by row in seq[string]
+    for i in readSheetRows(sheet):
+        echo i
+    xlsx.readClose()
+    handle.close()
+ 
 import
     xlsxio/xlsxio_read_core,
     xlsxio/xlsxio_write_core,
@@ -170,7 +180,7 @@ proc readSheetOpen*(handle: XlsxioReader; sheetname: string;
 
 proc readSheetOpen*(handle: XlsxioReader; sheetindex: int;
         skip: XlsxIOSkip = None): XlsxioReaderSheet =
-    ##Opens a sheet for a given index. Takes ignore options.
+    ##Opens a sheet for a given index. Takes ignore options. Indexing is 1 based.
     var index = 1
     var sheetname: string
     var found = false
