@@ -2,7 +2,7 @@
 
 version       = "0.1.1"
 author        = "juujaa"
-description   = "This is a xlsio wrapper done Nim in mind."
+description   = "This is a xlsxio wrapper done Nim in mind."
 license       = "MIT"
 srcDir        = "src"
 
