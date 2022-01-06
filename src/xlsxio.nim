@@ -1,12 +1,14 @@
 ##  This is a bit higher level wrapper for xlsxio. It automates memory freeing,
 ##  converts Nil errors into exceptions, provides few iterators/ procedures
-## and turns some constants into enums. Lower level access is available in src/xlsxio/ directory.
+##  and turns some constants into enums. Lower level access is available in src/xlsxio/ directory.
 ## 
 ## 
 ##  In order to keep it more readable this higher level wrapper omits xlsxio prefix in procedure names. Due to
 ##  quite distinctively named types namespace collisions/confusion should hopefully not happen. 
 ##  Prefix read/write correspond to their respective xlsxio counterparts. Time conversion omits
 ##  dateTime naming convention and uses epoch (unix) and Time from the standard library.
+## 
+##  This wrapper tries to keep all useful prcedures available so custom iterators can be easily made.
 ## 
 runnableExamples:
     #should be import xlsxio
