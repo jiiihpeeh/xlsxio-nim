@@ -8,7 +8,7 @@
 ##  Prefix read/write correspond to their respective xlsxio counterparts. Time conversion omits
 ##  dateTime naming convention and uses epoch (unix) and Time from the standard library.
 ## 
-##  This wrapper tries to keep all useful prcedures available so custom iterators can be easily made.
+##  This wrapper tries to keep all useful procedures available so custom iterators can be easily made.
 ## 
 runnableExamples:
     #should be import xlsxio
