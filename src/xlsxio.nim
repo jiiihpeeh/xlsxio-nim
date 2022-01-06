@@ -9,9 +9,9 @@
 ##  dateTime naming convention and uses epoch (unix) and Time from the standard library.
 ## 
 runnableExamples:
-    import xlsxio
+    #should be import xlsxio
     let handle = open("calc.xlsx") 
-    let xlsx = readOpenFilehandle(handle) #alternatively let xlsx = readOpen(handle)
+    let xlsx = readOpenFilehandle(handle) #alternatively let xlsx = readOpen("calc.xlsx")
     let sheet = xlsx.readSheetOpen("Sheet 1") # or by index xlsx.readSheetOpen(1)
     #echoes sheet content row by row in seq[string]
     for i in readSheetRows(sheet):

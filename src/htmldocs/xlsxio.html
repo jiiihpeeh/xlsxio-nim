@@ -362,9 +362,9 @@ window.addEventListener('DOMContentLoaded', main);
 
 <p><strong class="examples_text">Example:</strong></p>
 <pre class="listing"><span class="Keyword">import</span> <span class="Identifier">src</span><span class="Operator">/</span><span class="Identifier">xlsxio</span>
-<span class="Keyword">import</span> <span class="Identifier">xlsxio</span>
+<span class="Comment">#should be import xlsxio</span>
 <span class="Keyword">let</span> <span class="Identifier">handle</span> <span class="Operator">=</span> <span class="Identifier">open</span><span class="Punctuation">(</span><span class="StringLit">&quot;calc.xlsx&quot;</span><span class="Punctuation">)</span> 
-<span class="Keyword">let</span> <span class="Identifier">xlsx</span> <span class="Operator">=</span> <span class="Identifier">readOpenFilehandle</span><span class="Punctuation">(</span><span class="Identifier">handle</span><span class="Punctuation">)</span> <span class="Comment">#alternatively let xlsx = readOpen(handle)</span>
+<span class="Keyword">let</span> <span class="Identifier">xlsx</span> <span class="Operator">=</span> <span class="Identifier">readOpenFilehandle</span><span class="Punctuation">(</span><span class="Identifier">handle</span><span class="Punctuation">)</span> <span class="Comment">#alternatively let xlsx = readOpen(&quot;calc.xlsx&quot;)</span>
 <span class="Keyword">let</span> <span class="Identifier">sheet</span> <span class="Operator">=</span> <span class="Identifier">xlsx</span><span class="Operator">.</span><span class="Identifier">readSheetOpen</span><span class="Punctuation">(</span><span class="StringLit">&quot;Sheet 1&quot;</span><span class="Punctuation">)</span> <span class="Comment"># or by index xlsx.readSheetOpen(1)</span>
 <span class="Comment">#echoes sheet content row by row in seq[string]</span>
 <span class="Keyword">for</span> <span class="Identifier">i</span> <span class="Keyword">in</span> <span class="Identifier">readSheetRows</span><span class="Punctuation">(</span><span class="Identifier">sheet</span><span class="Punctuation">)</span><span class="Punctuation">:</span>
@@ -841,7 +841,7 @@ Iterates over aviable sheets
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-06 07:27:41 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-06 08:03:45 UTC</small>
       </div>
     </div>
   </div>
