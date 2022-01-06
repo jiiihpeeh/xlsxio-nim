@@ -129,7 +129,6 @@ proc sheets*(handle: XlsxioReader): seq[string] =
 proc hasSheet*(handle: XlsxioReader; name: string): bool =
     # Checks if a read handle has a sheet
     var listhandle = readSheetlistOpen(handle)
-    #defer: xlsxio_read_core.xlsxioread_sheetlist_close(listhandle)
     for s in readSheets(listhandle):
         if name == s:
             xlsxio_read_core.xlsxioread_sheetlist_close(listhandle)
@@ -141,7 +140,6 @@ proc len*(handle: XlsxioReader): int =
     ##Retuen sheet count
     var listhandle = readSheetlistOpen(handle)
     var count = 0
-    #defer: xlsxio_read_core.xlsxioread_sheetlist_close(listhandle)
     for s in readSheets(listhandle):
         count += 1
     return count
