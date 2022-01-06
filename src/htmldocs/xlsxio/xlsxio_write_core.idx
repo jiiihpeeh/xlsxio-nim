@@ -1,0 +1,14 @@
+xlsxiowrite_get_version	xlsxio/xlsxio_write_core.html#xlsxiowrite_get_version,ptr.cint,ptr.cint,ptr.cint	xlsxio_write_core: xlsxiowrite_get_version(pmajor: ptr cint; pminor: ptr cint; pmicro: ptr cint)	
+xlsxiowrite_get_version_string	xlsxio/xlsxio_write_core.html#xlsxiowrite_get_version_string	xlsxio_write_core: xlsxiowrite_get_version_string(): cstring	
+Xlsxio_write_struct	xlsxio/xlsxio_write_core.html#Xlsxio_write_struct	xlsxio_write_core: Xlsxio_write_struct	
+XlsxioWriter	xlsxio/xlsxio_write_core.html#XlsxioWriter	xlsxio_write_core: XlsxioWriter	
+xlsxiowrite_open	xlsxio/xlsxio_write_core.html#xlsxiowrite_open,cstring,cstring	xlsxio_write_core: xlsxiowrite_open(filename: cstring; sheetname: cstring): XlsxioWriter	
+xlsxiowrite_close	xlsxio/xlsxio_write_core.html#xlsxiowrite_close,XlsxioWriter	xlsxio_write_core: xlsxiowrite_close(handle: XlsxioWriter): cint	
+xlsxiowrite_set_detection_rows	xlsxio/xlsxio_write_core.html#xlsxiowrite_set_detection_rows,XlsxioWriter,csize_t	xlsxio_write_core: xlsxiowrite_set_detection_rows(handle: XlsxioWriter; rows: csize_t)	
+xlsxiowrite_set_row_height	xlsxio/xlsxio_write_core.html#xlsxiowrite_set_row_height,XlsxioWriter,csize_t	xlsxio_write_core: xlsxiowrite_set_row_height(handle: XlsxioWriter; height: csize_t)	
+xlsxiowrite_add_column	xlsxio/xlsxio_write_core.html#xlsxiowrite_add_column,XlsxioWriter,cstring,cint	xlsxio_write_core: xlsxiowrite_add_column(handle: XlsxioWriter; name: cstring; width: cint)	
+xlsxiowrite_add_cell_string	xlsxio/xlsxio_write_core.html#xlsxiowrite_add_cell_string,XlsxioWriter,cstring	xlsxio_write_core: xlsxiowrite_add_cell_string(handle: XlsxioWriter; value: cstring)	
+xlsxiowrite_add_cell_int	xlsxio/xlsxio_write_core.html#xlsxiowrite_add_cell_int,XlsxioWriter,int64	xlsxio_write_core: xlsxiowrite_add_cell_int(handle: XlsxioWriter; value: int64)	
+xlsxiowrite_add_cell_float	xlsxio/xlsxio_write_core.html#xlsxiowrite_add_cell_float,XlsxioWriter,cdouble	xlsxio_write_core: xlsxiowrite_add_cell_float(handle: XlsxioWriter; value: cdouble)	
+xlsxiowrite_add_cell_datetime	xlsxio/xlsxio_write_core.html#xlsxiowrite_add_cell_datetime,XlsxioWriter,int64	xlsxio_write_core: xlsxiowrite_add_cell_datetime(handle: XlsxioWriter; value: int64)	
+xlsxiowrite_next_row	xlsxio/xlsxio_write_core.html#xlsxiowrite_next_row,XlsxioWriter	xlsxio_write_core: xlsxiowrite_next_row(handle: XlsxioWriter)	

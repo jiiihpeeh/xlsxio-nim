@@ -1,0 +1,38 @@
+xlsxioread_get_version	xlsxio/xlsxio_read_core.html#xlsxioread_get_version,ptr.cint,ptr.cint,ptr.cint	xlsxio_read_core: xlsxioread_get_version(pmajor: ptr cint; pminor: ptr cint; pmicro: ptr cint)	
+xlsxioread_get_version_string	xlsxio/xlsxio_read_core.html#xlsxioread_get_version_string	xlsxio_read_core: xlsxioread_get_version_string(): cstring	
+xlsxio_read_struct	xlsxio/xlsxio_read_core.html#xlsxio_read_struct	xlsxio_read_core: xlsxio_read_struct	
+XlsxioReader	xlsxio/xlsxio_read_core.html#XlsxioReader	xlsxio_read_core: XlsxioReader	
+xlsxioread_open	xlsxio/xlsxio_read_core.html#xlsxioread_open,cstring	xlsxio_read_core: xlsxioread_open(filename: cstring): XlsxioReader	
+xlsxioread_open_filehandle	xlsxio/xlsxio_read_core.html#xlsxioread_open_filehandle,cint	xlsxio_read_core: xlsxioread_open_filehandle(filehandle: cint): XlsxioReader	
+xlsxioread_open_memory	xlsxio/xlsxio_read_core.html#xlsxioread_open_memory,pointer,uint64,cint	xlsxio_read_core: xlsxioread_open_memory(data: pointer; datalen: uint64; freedata: cint): XlsxioReader	
+xlsxioread_close	xlsxio/xlsxio_read_core.html#xlsxioread_close,XlsxioReader	xlsxio_read_core: xlsxioread_close(handle: XlsxioReader)	
+xlsxioread_list_sheets_callback_fn	xlsxio/xlsxio_read_core.html#xlsxioread_list_sheets_callback_fn	xlsxio_read_core: xlsxioread_list_sheets_callback_fn	
+xlsxioread_list_sheets	xlsxio/xlsxio_read_core.html#xlsxioread_list_sheets,XlsxioReader,xlsxioread_list_sheets_callback_fn,pointer	xlsxio_read_core: xlsxioread_list_sheets(handle: XlsxioReader;\n                       callback: xlsxioread_list_sheets_callback_fn;\n                       callbackdata: pointer)	
+XLSXIOREAD_SKIP_NONE	xlsxio/xlsxio_read_core.html#XLSXIOREAD_SKIP_NONE	xlsxio_read_core: XLSXIOREAD_SKIP_NONE	
+XLSXIOREAD_SKIP_EMPTY_ROWS	xlsxio/xlsxio_read_core.html#XLSXIOREAD_SKIP_EMPTY_ROWS	xlsxio_read_core: XLSXIOREAD_SKIP_EMPTY_ROWS	
+XLSXIOREAD_SKIP_EMPTY_CELLS	xlsxio/xlsxio_read_core.html#XLSXIOREAD_SKIP_EMPTY_CELLS	xlsxio_read_core: XLSXIOREAD_SKIP_EMPTY_CELLS	
+XLSXIOREAD_SKIP_ALL_EMPTY	xlsxio/xlsxio_read_core.html#XLSXIOREAD_SKIP_ALL_EMPTY	xlsxio_read_core: XLSXIOREAD_SKIP_ALL_EMPTY	
+XLSXIOREAD_SKIP_EXTRA_CELLS	xlsxio/xlsxio_read_core.html#XLSXIOREAD_SKIP_EXTRA_CELLS	xlsxio_read_core: XLSXIOREAD_SKIP_EXTRA_CELLS	
+XLSXIOREAD_SKIP_HIDDEN_ROWS	xlsxio/xlsxio_read_core.html#XLSXIOREAD_SKIP_HIDDEN_ROWS	xlsxio_read_core: XLSXIOREAD_SKIP_HIDDEN_ROWS	
+xlsxioread_process_cell_callback_fn	xlsxio/xlsxio_read_core.html#xlsxioread_process_cell_callback_fn	xlsxio_read_core: xlsxioread_process_cell_callback_fn	
+xlsxioread_process_row_callback_fn	xlsxio/xlsxio_read_core.html#xlsxioread_process_row_callback_fn	xlsxio_read_core: xlsxioread_process_row_callback_fn	
+xlsxioread_process	xlsxio/xlsxio_read_core.html#xlsxioread_process,XlsxioReader,cstring,cuint,xlsxioread_process_cell_callback_fn,xlsxioread_process_row_callback_fn,pointer	xlsxio_read_core: xlsxioread_process(handle: XlsxioReader; sheetname: cstring; flags: cuint;\n                   cell_callback: xlsxioread_process_cell_callback_fn;\n                   row_callback: xlsxioread_process_row_callback_fn;\n                   callbackdata: pointer): cint	
+xlsxio_read_sheetlist_struct	xlsxio/xlsxio_read_core.html#xlsxio_read_sheetlist_struct	xlsxio_read_core: xlsxio_read_sheetlist_struct	
+XlsxioReaderSheetList	xlsxio/xlsxio_read_core.html#XlsxioReaderSheetList	xlsxio_read_core: XlsxioReaderSheetList	
+xlsxioread_sheetlist_open	xlsxio/xlsxio_read_core.html#xlsxioread_sheetlist_open,XlsxioReader	xlsxio_read_core: xlsxioread_sheetlist_open(handle: XlsxioReader): XlsxioReaderSheetList	
+xlsxioread_sheetlist_close	xlsxio/xlsxio_read_core.html#xlsxioread_sheetlist_close,XlsxioReaderSheetList	xlsxio_read_core: xlsxioread_sheetlist_close(sheetlisthandle: XlsxioReaderSheetList)	
+xlsxioread_sheetlist_next	xlsxio/xlsxio_read_core.html#xlsxioread_sheetlist_next,XlsxioReaderSheetList	xlsxio_read_core: xlsxioread_sheetlist_next(sheetlisthandle: XlsxioReaderSheetList): cstring	
+xlsxio_read_sheet_struct	xlsxio/xlsxio_read_core.html#xlsxio_read_sheet_struct	xlsxio_read_core: xlsxio_read_sheet_struct	
+XlsxioReaderSheet	xlsxio/xlsxio_read_core.html#XlsxioReaderSheet	xlsxio_read_core: XlsxioReaderSheet	
+xlsxioread_sheet_last_row_index	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_last_row_index,XlsxioReaderSheet	xlsxio_read_core: xlsxioread_sheet_last_row_index(sheethandle: XlsxioReaderSheet): csize_t	
+xlsxioread_sheet_last_column_index	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_last_column_index,XlsxioReaderSheet	xlsxio_read_core: xlsxioread_sheet_last_column_index(sheethandle: XlsxioReaderSheet): csize_t	
+xlsxioread_sheet_flags	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_flags,XlsxioReaderSheet	xlsxio_read_core: xlsxioread_sheet_flags(sheethandle: XlsxioReaderSheet): cuint	
+xlsxioread_sheet_open	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_open,XlsxioReader,cstring,cuint	xlsxio_read_core: xlsxioread_sheet_open(handle: XlsxioReader; sheetname: cstring; flags: cuint): XlsxioReaderSheet	
+xlsxioread_sheet_close	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_close,XlsxioReaderSheet	xlsxio_read_core: xlsxioread_sheet_close(sheethandle: XlsxioReaderSheet)	
+xlsxioread_sheet_next_row	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_next_row,XlsxioReaderSheet	xlsxio_read_core: xlsxioread_sheet_next_row(sheethandle: XlsxioReaderSheet): cint	
+xlsxioread_sheet_next_cell	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_next_cell,XlsxioReaderSheet	xlsxio_read_core: xlsxioread_sheet_next_cell(sheethandle: XlsxioReaderSheet): cstring	
+xlsxioread_sheet_next_cell_string	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_next_cell_string,XlsxioReaderSheet,ptr.cstring	xlsxio_read_core: xlsxioread_sheet_next_cell_string(sheethandle: XlsxioReaderSheet;\n                                  pvalue: ptr cstring): cint	
+xlsxioread_sheet_next_cell_int	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_next_cell_int,XlsxioReaderSheet,ptr.int64	xlsxio_read_core: xlsxioread_sheet_next_cell_int(sheethandle: XlsxioReaderSheet; pvalue: ptr int64): cint	
+xlsxioread_sheet_next_cell_float	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_next_cell_float,XlsxioReaderSheet,ptr.cdouble	xlsxio_read_core: xlsxioread_sheet_next_cell_float(sheethandle: XlsxioReaderSheet;\n                                 pvalue: ptr cdouble): cint	
+xlsxioread_sheet_next_cell_datetime	xlsxio/xlsxio_read_core.html#xlsxioread_sheet_next_cell_datetime,XlsxioReaderSheet,ptr.int64	xlsxio_read_core: xlsxioread_sheet_next_cell_datetime(sheethandle: XlsxioReaderSheet;\n                                    pvalue: ptr int64): cint	
+xlsxioread_free	xlsxio/xlsxio_read_core.html#xlsxioread_free,cstring	xlsxio_read_core: xlsxioread_free(data: cstring)	

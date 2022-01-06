@@ -375,7 +375,7 @@ window.addEventListener('DOMContentLoaded', main);
   <div class="section" id="6">
 <h1><a class="toc-backref" href="#6">Imports</a></h1>
 <dl class="item">
-<a class="reference external" href="xlsxio_read_core.html">xlsxio_read_core</a>, <a class="reference external" href="xlsxio_write_core.html">xlsxio_write_core</a>
+<a class="reference external" href="xlsxio/xlsxio_read_core.html">xlsxio/xlsxio_read_core</a>, <a class="reference external" href="xlsxio/xlsxio_write_core.html">xlsxio/xlsxio_write_core</a>
 </dl></div>
 <div class="section" id="7">
 <h1><a class="toc-backref" href="#7">Types</a></h1>
@@ -435,7 +435,7 @@ Formats version info into a string
 </dd>
 </div>
 <div id="hasSheet,XlsxioReader,string">
-<dt><pre><span class="Keyword">proc</span> <a href="#hasSheet%2CXlsxioReader%2Cstring"><span class="Identifier">hasSheet</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">;</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#hasSheet%2CXlsxioReader%2Cstring"><span class="Identifier">hasSheet</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">;</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -444,7 +444,7 @@ Checks if a read handle has a sheet
 </dd>
 </div>
 <div id="len,XlsxioReader">
-<dt><pre><span class="Keyword">proc</span> <a href="#len%2CXlsxioReader"><span class="Identifier">len</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#len%2CXlsxioReader"><span class="Identifier">len</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 Returns sheet count
@@ -452,7 +452,7 @@ Returns sheet count
 </dd>
 </div>
 <div id="readClose,XlsxioReader">
-<dt><pre><span class="Keyword">proc</span> <a href="#readClose%2CXlsxioReader"><span class="Identifier">readClose</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#readClose%2CXlsxioReader"><span class="Identifier">readClose</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 Closes a handle.
@@ -468,7 +468,7 @@ Returns version info in object format
 </dd>
 </div>
 <div id="readOpen,string">
-<dt><pre><span class="Keyword">proc</span> <a href="#readOpen%2Cstring"><span class="Identifier">readOpen</span></a><span class="Other">(</span><span class="Identifier">filename</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#readOpen%2Cstring"><span class="Identifier">readOpen</span></a><span class="Other">(</span><span class="Identifier">filename</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 Opens a spreadsheet for reading. Returns a handle.
@@ -476,7 +476,7 @@ Opens a spreadsheet for reading. Returns a handle.
 </dd>
 </div>
 <div id="readOpenFilehandle,File">
-<dt><pre><span class="Keyword">proc</span> <a href="#readOpenFilehandle%2CFile"><span class="Identifier">readOpenFilehandle</span></a><span class="Other">(</span><span class="Identifier">filehandle</span><span class="Other">:</span> <span class="Identifier">File</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#readOpenFilehandle%2CFile"><span class="Identifier">readOpenFilehandle</span></a><span class="Other">(</span><span class="Identifier">filehandle</span><span class="Other">:</span> <span class="Identifier">File</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -488,7 +488,7 @@ Opens a spreadsheet file handle for reading. Returns a handle.
 </dd>
 </div>
 <div id="readOpenMemory,ptr,int,bool">
-<dt><pre><span class="Keyword">proc</span> <a href="#readOpenMemory%2Cptr%2Cint%2Cbool"><span class="Identifier">readOpenMemory</span></a><span class="Other">(</span><span class="Identifier">data</span><span class="Other">:</span> <span class="Keyword">ptr</span><span class="Other">;</span> <span class="Identifier">datalen</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">freedata</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">true</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#readOpenMemory%2Cptr%2Cint%2Cbool"><span class="Identifier">readOpenMemory</span></a><span class="Other">(</span><span class="Identifier">data</span><span class="Other">:</span> <span class="Keyword">ptr</span><span class="Other">;</span> <span class="Identifier">datalen</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">freedata</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">true</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a></pre></dt>
 <dd>
 
 Not tested
@@ -496,7 +496,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetFlags,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetFlags%2CXlsxioReaderSheet"><span class="Identifier">readSheetFlags</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio.html#XlsxIOSkip"><span class="Identifier">XlsxIOSkip</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetFlags%2CXlsxioReaderSheet"><span class="Identifier">readSheetFlags</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio.html#XlsxIOSkip"><span class="Identifier">XlsxIOSkip</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -505,7 +505,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetIntoArray,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetIntoArray%2CXlsxioReaderSheet"><span class="Identifier">readSheetIntoArray</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetIntoArray%2CXlsxioReaderSheet"><span class="Identifier">readSheetIntoArray</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span><span class="Other">]</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -514,7 +514,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetLastColumnIndex,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetLastColumnIndex%2CXlsxioReaderSheet"><span class="Identifier">readSheetLastColumnIndex</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetLastColumnIndex%2CXlsxioReaderSheet"><span class="Identifier">readSheetLastColumnIndex</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -523,7 +523,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetLastRowIndex,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetLastRowIndex%2CXlsxioReaderSheet"><span class="Identifier">readSheetLastRowIndex</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetLastRowIndex%2CXlsxioReaderSheet"><span class="Identifier">readSheetLastRowIndex</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -532,7 +532,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetlistOpen,XlsxioReader">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetlistOpen%2CXlsxioReader"><span class="Identifier">readSheetlistOpen</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheetList"><span class="Identifier">XlsxioReaderSheetList</span></a> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetlistOpen%2CXlsxioReader"><span class="Identifier">readSheetlistOpen</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheetList"><span class="Identifier">XlsxioReaderSheetList</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -541,7 +541,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetNextCell,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCell%2CXlsxioReaderSheet"><span class="Identifier">readSheetNextCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio.html#XlsxCell"><span class="Identifier">XlsxCell</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCell%2CXlsxioReaderSheet"><span class="Identifier">readSheetNextCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio.html#XlsxCell"><span class="Identifier">XlsxCell</span></a> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -550,7 +550,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetNextCellEpoch,XlsxioReaderSheet,int64">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellEpoch%2CXlsxioReaderSheet%2Cint64"><span class="Identifier">readSheetNextCellEpoch</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">cellint</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">int64</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellEpoch%2CXlsxioReaderSheet%2Cint64"><span class="Identifier">readSheetNextCellEpoch</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">cellint</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">int64</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -559,7 +559,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetNextCellFloat,XlsxioReaderSheet,float64">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellFloat%2CXlsxioReaderSheet%2Cfloat64"><span class="Identifier">readSheetNextCellFloat</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">cellfloat</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">float64</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellFloat%2CXlsxioReaderSheet%2Cfloat64"><span class="Identifier">readSheetNextCellFloat</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">cellfloat</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">float64</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -568,7 +568,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetNextCellInt,XlsxioReaderSheet,int64">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellInt%2CXlsxioReaderSheet%2Cint64"><span class="Identifier">readSheetNextCellInt</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">cellint</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">int64</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellInt%2CXlsxioReaderSheet%2Cint64"><span class="Identifier">readSheetNextCellInt</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">cellint</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">int64</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -577,7 +577,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetNextCellString,XlsxioReaderSheet,string">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellString%2CXlsxioReaderSheet%2Cstring"><span class="Identifier">readSheetNextCellString</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">cellstring</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellString%2CXlsxioReaderSheet%2Cstring"><span class="Identifier">readSheetNextCellString</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">cellstring</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -586,7 +586,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetNextCellTime,XlsxioReaderSheet,Time">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellTime%2CXlsxioReaderSheet%2CTime"><span class="Identifier">readSheetNextCellTime</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">celltime</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">Time</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextCellTime%2CXlsxioReaderSheet%2CTime"><span class="Identifier">readSheetNextCellTime</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">;</span> <span class="Identifier">celltime</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">Time</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -595,7 +595,7 @@ Not tested
 </dd>
 </div>
 <div id="readSheetNextRow,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextRow%2CXlsxioReaderSheet"><span class="Identifier">readSheetNextRow</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetNextRow%2CXlsxioReaderSheet"><span class="Identifier">readSheetNextRow</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -603,8 +603,8 @@ Not tested
 </dd>
 </div>
 <div id="readSheetOpen,XlsxioReader,int,XlsxIOSkip">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetOpen%2CXlsxioReader%2Cint%2CXlsxIOSkip"><span class="Identifier">readSheetOpen</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">;</span> <span class="Identifier">sheetindex</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span>
-                   <span class="Identifier">skip</span><span class="Other">:</span> <a href="xlsxio.html#XlsxIOSkip"><span class="Identifier">XlsxIOSkip</span></a> <span class="Other">=</span> <span class="Identifier">None</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetOpen%2CXlsxioReader%2Cint%2CXlsxIOSkip"><span class="Identifier">readSheetOpen</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">;</span> <span class="Identifier">sheetindex</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span>
+                   <span class="Identifier">skip</span><span class="Other">:</span> <a href="xlsxio.html#XlsxIOSkip"><span class="Identifier">XlsxIOSkip</span></a> <span class="Other">=</span> <span class="Identifier">None</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -613,8 +613,8 @@ Opens a sheet for a given index. Takes ignore options. Indexing is 1 based.
 </dd>
 </div>
 <div id="readSheetOpen,XlsxioReader,string,XlsxIOSkip">
-<dt><pre><span class="Keyword">proc</span> <a href="#readSheetOpen%2CXlsxioReader%2Cstring%2CXlsxIOSkip"><span class="Identifier">readSheetOpen</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">;</span> <span class="Identifier">sheetname</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
-                   <span class="Identifier">skip</span><span class="Other">:</span> <a href="xlsxio.html#XlsxIOSkip"><span class="Identifier">XlsxIOSkip</span></a> <span class="Other">=</span> <span class="Identifier">None</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#readSheetOpen%2CXlsxioReader%2Cstring%2CXlsxIOSkip"><span class="Identifier">readSheetOpen</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">;</span> <span class="Identifier">sheetname</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                   <span class="Identifier">skip</span><span class="Other">:</span> <a href="xlsxio.html#XlsxIOSkip"><span class="Identifier">XlsxIOSkip</span></a> <span class="Other">=</span> <span class="Identifier">None</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -623,7 +623,7 @@ Opens a sheet. Takes ignore options.
 </dd>
 </div>
 <div id="sheets,XlsxioReader">
-<dt><pre><span class="Keyword">proc</span> <a href="#sheets%2CXlsxioReader"><span class="Identifier">sheets</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#sheets%2CXlsxioReader"><span class="Identifier">sheets</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 Lists read handle's sheets.
@@ -631,7 +631,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCell,XlsxioWriter,float64">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCell%2CXlsxioWriter%2Cfloat64"><span class="Identifier">writeAddCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">float64</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCell%2CXlsxioWriter%2Cfloat64"><span class="Identifier">writeAddCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">float64</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -639,7 +639,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCell,XlsxioWriter,int64,XlsxAddMode">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCell%2CXlsxioWriter%2Cint64%2CXlsxAddMode"><span class="Identifier">writeAddCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">int64</span><span class="Other">;</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCell%2CXlsxioWriter%2Cint64%2CXlsxAddMode"><span class="Identifier">writeAddCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">int64</span><span class="Other">;</span>
                   <span class="Identifier">mode</span><span class="Other">:</span> <a href="xlsxio.html#XlsxAddMode"><span class="Identifier">XlsxAddMode</span></a> <span class="Other">=</span> <span class="Identifier">Integer</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -648,7 +648,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCell,XlsxioWriter,string">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCell%2CXlsxioWriter%2Cstring"><span class="Identifier">writeAddCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCell%2CXlsxioWriter%2Cstring"><span class="Identifier">writeAddCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -656,7 +656,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCell,XlsxioWriter,Time">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCell%2CXlsxioWriter%2CTime"><span class="Identifier">writeAddCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">Time</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCell%2CXlsxioWriter%2CTime"><span class="Identifier">writeAddCell</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">Time</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -664,7 +664,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCellEpoch,XlsxioWriter,int64">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellEpoch%2CXlsxioWriter%2Cint64"><span class="Identifier">writeAddCellEpoch</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">int64</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellEpoch%2CXlsxioWriter%2Cint64"><span class="Identifier">writeAddCellEpoch</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">int64</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -673,7 +673,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCellFloat,XlsxioWriter,float64">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellFloat%2CXlsxioWriter%2Cfloat64"><span class="Identifier">writeAddCellFloat</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">float64</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellFloat%2CXlsxioWriter%2Cfloat64"><span class="Identifier">writeAddCellFloat</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">float64</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -682,7 +682,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCellInt,XlsxioWriter,int64">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellInt%2CXlsxioWriter%2Cint64"><span class="Identifier">writeAddCellInt</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">int64</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellInt%2CXlsxioWriter%2Cint64"><span class="Identifier">writeAddCellInt</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">int64</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -690,7 +690,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCellString,XlsxioWriter,string">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellString%2CXlsxioWriter%2Cstring"><span class="Identifier">writeAddCellString</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellString%2CXlsxioWriter%2Cstring"><span class="Identifier">writeAddCellString</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -699,7 +699,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddCellTime,XlsxioWriter,Time">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellTime%2CXlsxioWriter%2CTime"><span class="Identifier">writeAddCellTime</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">Time</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddCellTime%2CXlsxioWriter%2CTime"><span class="Identifier">writeAddCellTime</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">Time</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -707,7 +707,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeAddColumn,XlsxioWriter,string,int">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeAddColumn%2CXlsxioWriter%2Cstring%2Cint"><span class="Identifier">writeAddColumn</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">width</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#writeAddColumn%2CXlsxioWriter%2Cstring%2Cint"><span class="Identifier">writeAddColumn</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">width</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -716,7 +716,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeClose,XlsxioWriter">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeClose%2CXlsxioWriter"><span class="Identifier">writeClose</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeClose%2CXlsxioWriter"><span class="Identifier">writeClose</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -732,7 +732,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeNextRow,XlsxioWriter">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeNextRow%2CXlsxioWriter"><span class="Identifier">writeNextRow</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeNextRow%2CXlsxioWriter"><span class="Identifier">writeNextRow</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -740,7 +740,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeOpen,string,string">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeOpen%2Cstring%2Cstring"><span class="Identifier">writeOpen</span></a><span class="Other">(</span><span class="Identifier">filename</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">sheetname</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a> {.
+<dt><pre><span class="Keyword">proc</span> <a href="#writeOpen%2Cstring%2Cstring"><span class="Identifier">writeOpen</span></a><span class="Other">(</span><span class="Identifier">filename</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">sheetname</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -749,7 +749,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeSetDetectionRows,XlsxioWriter,int">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeSetDetectionRows%2CXlsxioWriter%2Cint"><span class="Identifier">writeSetDetectionRows</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">rows</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeSetDetectionRows%2CXlsxioWriter%2Cint"><span class="Identifier">writeSetDetectionRows</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">rows</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -758,7 +758,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="writeSetRowHeight,XlsxioWriter,int">
-<dt><pre><span class="Keyword">proc</span> <a href="#writeSetRowHeight%2CXlsxioWriter%2Cint"><span class="Identifier">writeSetRowHeight</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">height</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#writeSetRowHeight%2CXlsxioWriter%2Cint"><span class="Identifier">writeSetRowHeight</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_write_core.html#XlsxioWriter"><span class="Identifier">XlsxioWriter</span></a><span class="Other">;</span> <span class="Identifier">height</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -771,7 +771,7 @@ Lists read handle's sheets.
 <h1><a class="toc-backref" href="#15">Iterators</a></h1>
 <dl class="item">
 <div id="readSheetRows.i,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRows.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRows</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRows.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRows</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">string</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -780,7 +780,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="readSheetRowsEpoch.i,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRowsEpoch.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRowsEpoch</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">float</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRowsEpoch.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRowsEpoch</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">float</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -789,7 +789,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="readSheetRowsFloat.i,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRowsFloat.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRowsFloat</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">float</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRowsFloat.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRowsFloat</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">float</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -798,7 +798,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="readSheetRowsInt.i,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRowsInt.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRowsInt</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">int</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRowsInt.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRowsInt</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">int</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -807,7 +807,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="readSheetRowsTime.i,XlsxioReaderSheet">
-<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRowsTime.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRowsTime</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">Time</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">iterator</span> <a href="#readSheetRowsTime.i%2CXlsxioReaderSheet"><span class="Identifier">readSheetRowsTime</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheet"><span class="Identifier">XlsxioReaderSheet</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">Time</span><span class="Other">]</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -816,7 +816,7 @@ Lists read handle's sheets.
 </dd>
 </div>
 <div id="readSheets.i,XlsxioReader">
-<dt><pre><span class="Keyword">iterator</span> <a href="#readSheets.i%2CXlsxioReader"><span class="Identifier">readSheets</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">iterator</span> <a href="#readSheets.i%2CXlsxioReader"><span class="Identifier">readSheets</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReader"><span class="Identifier">XlsxioReader</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 Iterates over aviable sheets
@@ -824,7 +824,7 @@ Iterates over aviable sheets
 </dd>
 </div>
 <div id="readSheets.i,XlsxioReaderSheetList">
-<dt><pre><span class="Keyword">iterator</span> <a href="#readSheets.i%2CXlsxioReaderSheetList"><span class="Identifier">readSheets</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio_read_core.html#XlsxioReaderSheetList"><span class="Identifier">XlsxioReaderSheetList</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">iterator</span> <a href="#readSheets.i%2CXlsxioReaderSheetList"><span class="Identifier">readSheets</span></a><span class="Other">(</span><span class="Identifier">handle</span><span class="Other">:</span> <a href="xlsxio/xlsxio_read_core.html#XlsxioReaderSheetList"><span class="Identifier">XlsxioReaderSheetList</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -842,7 +842,7 @@ Iterates over aviable sheets
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-06 09:12:06 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-06 10:19:01 UTC</small>
       </div>
     </div>
   </div>

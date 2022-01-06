@@ -1,0 +1,58 @@
+XlsxIOVersion	xlsxio.html#XlsxIOVersion	xlsxio: XlsxIOVersion	
+None	xlsxio.html#None	XlsxIOSkip.None	
+EmptyRows	xlsxio.html#EmptyRows	XlsxIOSkip.EmptyRows	
+EmptyCells	xlsxio.html#EmptyCells	XlsxIOSkip.EmptyCells	
+AllEmpty	xlsxio.html#AllEmpty	XlsxIOSkip.AllEmpty	
+ExtraCells	xlsxio.html#ExtraCells	XlsxIOSkip.ExtraCells	
+HiddenRows	xlsxio.html#HiddenRows	XlsxIOSkip.HiddenRows	
+XlsxIOSkip	xlsxio.html#XlsxIOSkip	xlsxio: XlsxIOSkip	
+Integer	xlsxio.html#Integer	XlsxAddMode.Integer	
+TimeInfo	xlsxio.html#TimeInfo	XlsxAddMode.TimeInfo	
+XlsxAddMode	xlsxio.html#XlsxAddMode	xlsxio: XlsxAddMode	
+XlsxCell	xlsxio.html#XlsxCell	xlsxio: XlsxCell	
+readGetVersion	xlsxio.html#readGetVersion	xlsxio: readGetVersion(): XlsxIOVersion	
+`$`	xlsxio.html#$,XlsxIOVersion	xlsxio: `$`(version: XlsxIOVersion): string	
+readOpen	xlsxio.html#readOpen,string	xlsxio: readOpen(filename: string): XlsxioReader	
+readOpenFilehandle	xlsxio.html#readOpenFilehandle,File	xlsxio: readOpenFilehandle(filehandle: File): XlsxioReader	
+readOpenMemory	xlsxio.html#readOpenMemory,ptr,int,bool	xlsxio: readOpenMemory(data: ptr; datalen: int; freedata: bool = true): XlsxioReader	
+readClose	xlsxio.html#readClose,XlsxioReader	xlsxio: readClose(handle: XlsxioReader)	
+readSheetlistOpen	xlsxio.html#readSheetlistOpen,XlsxioReader	xlsxio: readSheetlistOpen(handle: XlsxioReader): XlsxioReaderSheetList	
+readSheets	xlsxio.html#readSheets.i,XlsxioReader	xlsxio: readSheets(handle: XlsxioReader): string	
+readSheets	xlsxio.html#readSheets.i,XlsxioReaderSheetList	xlsxio: readSheets(handle: XlsxioReaderSheetList): string	
+sheets	xlsxio.html#sheets,XlsxioReader	xlsxio: sheets(handle: XlsxioReader): seq[string]	
+hasSheet	xlsxio.html#hasSheet,XlsxioReader,string	xlsxio: hasSheet(handle: XlsxioReader; name: string): bool	
+len	xlsxio.html#len,XlsxioReader	xlsxio: len(handle: XlsxioReader): int	
+readSheetOpen	xlsxio.html#readSheetOpen,XlsxioReader,string,XlsxIOSkip	xlsxio: readSheetOpen(handle: XlsxioReader; sheetname: string; skip: XlsxIOSkip = None): XlsxioReaderSheet	
+readSheetOpen	xlsxio.html#readSheetOpen,XlsxioReader,int,XlsxIOSkip	xlsxio: readSheetOpen(handle: XlsxioReader; sheetindex: int; skip: XlsxIOSkip = None): XlsxioReaderSheet	
+readSheetLastRowIndex	xlsxio.html#readSheetLastRowIndex,XlsxioReaderSheet	xlsxio: readSheetLastRowIndex(handle: XlsxioReaderSheet): int	
+readSheetLastColumnIndex	xlsxio.html#readSheetLastColumnIndex,XlsxioReaderSheet	xlsxio: readSheetLastColumnIndex(handle: XlsxioReaderSheet): int	
+readSheetNextRow	xlsxio.html#readSheetNextRow,XlsxioReaderSheet	xlsxio: readSheetNextRow(handle: XlsxioReaderSheet): int	
+readSheetNextCell	xlsxio.html#readSheetNextCell,XlsxioReaderSheet	xlsxio: readSheetNextCell(handle: XlsxioReaderSheet): XlsxCell	
+readSheetNextCellString	xlsxio.html#readSheetNextCellString,XlsxioReaderSheet,string	xlsxio: readSheetNextCellString(handle: XlsxioReaderSheet; cellstring: var string): int	
+readSheetNextCellInt	xlsxio.html#readSheetNextCellInt,XlsxioReaderSheet,int64	xlsxio: readSheetNextCellInt(handle: XlsxioReaderSheet; cellint: var int64): int	
+readSheetNextCellFloat	xlsxio.html#readSheetNextCellFloat,XlsxioReaderSheet,float64	xlsxio: readSheetNextCellFloat(handle: XlsxioReaderSheet; cellfloat: var float64): int	
+readSheetNextCellEpoch	xlsxio.html#readSheetNextCellEpoch,XlsxioReaderSheet,int64	xlsxio: readSheetNextCellEpoch(handle: XlsxioReaderSheet; cellint: var int64): int	
+readSheetNextCellTime	xlsxio.html#readSheetNextCellTime,XlsxioReaderSheet,Time	xlsxio: readSheetNextCellTime(handle: XlsxioReaderSheet; celltime: var Time): int	
+readSheetFlags	xlsxio.html#readSheetFlags,XlsxioReaderSheet	xlsxio: readSheetFlags(handle: XlsxioReaderSheet): XlsxIOSkip	
+readSheetRows	xlsxio.html#readSheetRows.i,XlsxioReaderSheet	xlsxio: readSheetRows(handle: XlsxioReaderSheet): seq[string]	
+readSheetRowsInt	xlsxio.html#readSheetRowsInt.i,XlsxioReaderSheet	xlsxio: readSheetRowsInt(handle: XlsxioReaderSheet): seq[int]	
+readSheetRowsFloat	xlsxio.html#readSheetRowsFloat.i,XlsxioReaderSheet	xlsxio: readSheetRowsFloat(handle: XlsxioReaderSheet): seq[float]	
+readSheetRowsEpoch	xlsxio.html#readSheetRowsEpoch.i,XlsxioReaderSheet	xlsxio: readSheetRowsEpoch(handle: XlsxioReaderSheet): seq[float]	
+readSheetRowsTime	xlsxio.html#readSheetRowsTime.i,XlsxioReaderSheet	xlsxio: readSheetRowsTime(handle: XlsxioReaderSheet): seq[Time]	
+readSheetIntoArray	xlsxio.html#readSheetIntoArray,XlsxioReaderSheet	xlsxio: readSheetIntoArray(handle: XlsxioReaderSheet): seq[seq[string]]	
+writeGetVersion	xlsxio.html#writeGetVersion	xlsxio: writeGetVersion(): XlsxIOVersion	
+writeOpen	xlsxio.html#writeOpen,string,string	xlsxio: writeOpen(filename: string; sheetname: string): XlsxioWriter	
+writeClose	xlsxio.html#writeClose,XlsxioWriter	xlsxio: writeClose(handle: XlsxioWriter)	
+writeSetDetectionRows	xlsxio.html#writeSetDetectionRows,XlsxioWriter,int	xlsxio: writeSetDetectionRows(handle: XlsxioWriter; rows: int)	
+writeSetRowHeight	xlsxio.html#writeSetRowHeight,XlsxioWriter,int	xlsxio: writeSetRowHeight(handle: XlsxioWriter; height: int)	
+writeAddColumn	xlsxio.html#writeAddColumn,XlsxioWriter,string,int	xlsxio: writeAddColumn(handle: XlsxioWriter; name: string; width: int)	
+writeAddCellString	xlsxio.html#writeAddCellString,XlsxioWriter,string	xlsxio: writeAddCellString(handle: XlsxioWriter; value: string)	
+writeAddCellInt	xlsxio.html#writeAddCellInt,XlsxioWriter,int64	xlsxio: writeAddCellInt(handle: XlsxioWriter; value: int64)	
+writeAddCellFloat	xlsxio.html#writeAddCellFloat,XlsxioWriter,float64	xlsxio: writeAddCellFloat(handle: XlsxioWriter; value: float64)	
+writeAddCellEpoch	xlsxio.html#writeAddCellEpoch,XlsxioWriter,int64	xlsxio: writeAddCellEpoch(handle: XlsxioWriter; value: int64)	
+writeAddCellTime	xlsxio.html#writeAddCellTime,XlsxioWriter,Time	xlsxio: writeAddCellTime(handle: XlsxioWriter; value: Time)	
+writeAddCell	xlsxio.html#writeAddCell,XlsxioWriter,Time	xlsxio: writeAddCell(handle: XlsxioWriter; value: Time)	
+writeNextRow	xlsxio.html#writeNextRow,XlsxioWriter	xlsxio: writeNextRow(handle: XlsxioWriter)	
+writeAddCell	xlsxio.html#writeAddCell,XlsxioWriter,string	xlsxio: writeAddCell(handle: XlsxioWriter; value: string)	
+writeAddCell	xlsxio.html#writeAddCell,XlsxioWriter,int64,XlsxAddMode	xlsxio: writeAddCell(handle: XlsxioWriter; value: int64; mode: XlsxAddMode = Integer)	
+writeAddCell	xlsxio.html#writeAddCell,XlsxioWriter,float64	xlsxio: writeAddCell(handle: XlsxioWriter; value: float64)	
