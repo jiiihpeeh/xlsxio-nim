@@ -358,7 +358,8 @@ window.addEventListener('DOMContentLoaded', main);
   <div id="tocRoot"></div>
   
   <p class="module-desc"><p>This is a bit higher level wrapper for xlsxio. It automates memory freeing, converts Nil errors into exceptions, provides few iterators/ procedures and turns some constants into enums. Lower level access is available in src/xlsxio/ directory.</p>
-<p>In order to keep it more readable this higher level wrapper omits xlsxio prefix in procedure names. Due to quite distinctively named types namespace collisions/confusion should hopefully not happen. Prefix read/write correspond to their respective xlsxio counterparts. Time conversion omits dateTime naming convention and uses epoch (unix) and Time from the standard library. </p>
+<p>In order to keep it more readable this higher level wrapper omits xlsxio prefix in procedure names. Due to quite distinctively named types namespace collisions/confusion should hopefully not happen. Prefix read/write correspond to their respective xlsxio counterparts. Time conversion omits dateTime naming convention and uses epoch (unix) and Time from the standard library.</p>
+<p>This wrapper tries to keep all useful prcedures available so custom iterators can be easily made. </p>
 
 <p><strong class="examples_text">Example:</strong></p>
 <pre class="listing"><span class="Keyword">import</span> <span class="Identifier">src</span><span class="Operator">/</span><span class="Identifier">xlsxio</span>
@@ -841,7 +842,7 @@ Iterates over aviable sheets
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-06 08:03:45 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2022-01-06 08:17:30 UTC</small>
       </div>
     </div>
   </div>
